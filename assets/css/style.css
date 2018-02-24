@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif,  Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+    font-family: 'PT Serif', serif;
+    font-size: 1.7rem;
+}
+
+p {
+    line-height: 1.8em;
+}
+nav {
+    height: 60px;
+}
+
+#nav-brand{
+    position: relative;
+    height: 100%;
+    right: -7%;
+    vertical-align: middle;
+    font-size: 1.75rem;
+}
+
+#text-intro {
+    font-weight: bold;
+    font-size: 1.25em;
+    font-family: serif;
+}
