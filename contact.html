@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,70 +10,76 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto:400,400i,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 <body>
 
-          <nav class="navbar navbar-expand-md navbar-light bg-light py-0">
-                <!-- switch order of brand to right side if view port small -->
-                <a class="navbar-brand bg-info text-light my-0 order-sm-1 px-3" href="#" id="nav-brand">Lorenzo Vasquez</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- switch order of nav links back to right side IF viewport md and up -->
-                <div class="collapse navbar-collapse justify-content-end order-md-1" id="navbarNavAltMarkup">
-                  <div class="navbar-nav ">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Portfolio</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
-                  </div>
-                </div>
-              </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-0">
+        <!-- switch order of brand to right side if view port small -->
+        <a class="navbar-brand bg-info text-light my-0 order-sm-1 px-3" href="#" id="nav-brand">Lorenzo Vasquez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- switch order of nav links back to right side IF viewport md and up -->
+        <div class="collapse navbar-collapse justify-content-end order-md-1" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+            <a class="nav-item nav-link" href="index.html">About</a>
+            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+    </nav>
 
 
-    <div class="container">
+    <div class="container clear-top my-4 mx-auto ">
         <!-- section on left side of page -->
-        <div class="row mt-4">
+        <div class="row mt-3">
             <div class="col-md-8">
                 <div class="card">
-                    <h2 class="card-header">About Me</h2>
-                    <hr>
-                    <img src="assets/images/profile-1.png" class="img-fluid img-circle float-left mr-4 w-50" alt="Lorenzo Vasquez Profile Picture"/>
-                    <p class="card-text">
-                            <span id="text-intro"> I’m an aspiring web developer </span> who loves everything about the web. 
-                            I've lived in lots of different places and have worked in lots of different jobs. 
-                            I’m excited to bring my life experience to the process of building fantastic looking websites.
-                            I am life-long learner who's always interested in expanding my skills.
-                            When I have free time I like to exercise, paint, skiing, hiking, travelling, or simply jamming out with my uke.
-                    </p>
-                    <h3 class="mt-5">Goals</h3>
-                    <p>
-                        I want to master the process of building web sites and increase my knowledge, skills, and abilities in:
-                    </p>
-                    <ul class="skills">
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>Photoshop</li>
-                        <li>WordPress</li>
-                    </ul>
+                    <div class="card-body">
+                        <h2 class="">Contact</h2>
+                        <hr>
+                        <form method="post" action="contact-form-handler.php">
+                            <div class="form-group">
+                                <!-- input name -->
+                                <label for="formInputName">Name</label>
+                                <input type="text" class="form-control" id="formInputName" placeholder="John Smith" required>
+                                <!-- input email -->
+                                <label for="formInputEmail">Email address</label>
+                                <input type="email" class="form-control" id="formInputEmail" placeholder="name@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="formInputMessage">Message</label>
+                                <textarea class="form-control" id="formInputMessage" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" value="Send Email">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
 
             <!-- section in right side of page -->
-            <div class="col-md">
-                <h3  id="connect-with-me">Connect</h3>
-                <hr>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3  id="connect-with-me">Connect with Me</h3>
+                        <hr>
+                        <ul class="d-flex justify-content-around">
+                            <li><i class="fab fa-linkedin fa-5x img-fluid px-1" style="color:dodgerblue"></i></li>
+                            <li><i class="fab fa-github-square fa-5x img-fluid px-1" style="color:dimgrey"></i></li>
+                            <li><i class="fab fa-facebook fa-5x img-fluid px-1" style="color:dodgerblue"></i></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </div>
-
-        <footer class="row py-3">
-            <div class="col text-center">
-                <h6>&copy; Copyright 2018 Lorenzo Vasquez</h6>
-            </div>
-        </footer>
     </div> <!-- END CONTAINER -->
-
+    <footer class="bg-dark py-3 fixed-bottom">
+        <div class="text-center text-light">
+            <h6>&copy; Copyright 2018 Lorenzo Vasquez</h6>
+        </div>
+    </footer>
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
