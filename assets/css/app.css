@@ -1,0 +1,55 @@
+/****************************** GENERAL *******************************/
+
+body {
+    background: url("assets/images/textured_paper.png");
+    /* background: red; */
+    min-height: 100vh;
+    position: relative;
+}
+
+._largeText {
+    font-size: 1.1rem;
+}
+
+._verticalFlexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+._verticalStretch{
+    min-height: 48%;
+}
+
+._centerButtons {
+    /* /* background: red; */
+    display: flex;
+    justify-content: space-evenly ;
+    margin: 1.5em auto;
+}
+
+._sendMessageButton {
+    width: 110px;
+}
+
+
+/****************************** NAV ***********************************/
+
+
+
+
+
+/****************************** HEADER ********************************/
+
+
+
+
+
+/****************************** BODY **********************************/
+main.ui.grid {
+    margin-top: 4.5em;
+}
+
+
+
+
+/****************************** FOOTER ********************************/
