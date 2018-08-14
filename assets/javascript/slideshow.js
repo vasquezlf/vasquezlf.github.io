@@ -24,7 +24,7 @@ $("#next").click(nextImage);
 // in the 'src' attribute of the img tag.
 function displayImage() {
 
-  $("#image-holder").html(`<img src=${images[count]}>`);
+  $("#image-holder").html("<img src=" + images[count] +">");
 
 }
 
