@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">    
+    <link rel="stylesheet" href="assets/css/reset.css">
     <!-- Semantic-UI CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
     <!-- Custom CSS -->
@@ -14,19 +14,23 @@
   </head>
   <body>
     <!-- NAV -->
-    
+
     <div class="ui sidebar vertical left inverted labeled main icon menu">
       <a href="https://vasquezlf.github.io/" class="item"><i class="icon home"></i>Home</a>
       <!-- <a href="#" class="item"><i class="icon code"></i>Portfolio</a> -->
       <div class="item">
         <div class="header">Portfolio</div>
+
         <div class="menu">
-          <a href='https://vasquezlf.github.io/hangman' class="item">Hangman</a>
-          <a href='https://vasquezlf.github.io/crystalcollector' class="item">Crystal Collector</a>
-          <a href='https://vasquezlf.github.io/triviagame/' class="item">Trivia Game</a>
-          <a href='https://vasquezlf.github.io/giffygenerator/' class="item">Giffy Generator</a>
-          <a href='https://vasquezlf.github.io/trainsched/' class="item">Train Scheduler</a>
+          <a href='https://vasquezlf.github.io/hangman' class="item" target="_blank">Hangman</a>
+          <a href='https://vasquezlf.github.io/crystalcollector' class="item" target="_blank">Crystal Collector</a>
+          <a href='https://vasquezlf.github.io/triviagame/' class="item" target="_blank">Trivia Game</a>
+          <a href='https://vasquezlf.github.io/giffygenerator/' class="item" target="_blank">Giffy Generator</a>
+          <a href='https://vasquezlf.github.io/trainsched/' class="item" target="_blank">Train Scheduler</a>
         </div>
+        <a href='https://group-calendar-app.firebaseapp.com/' class="item" target="_blank">Project 1 - Ohm</a>
+        <a href='https://mighty-taiga-95027.herokuapp.com/' class="item" target="_blank">Project 2 - Tree Logger</a>
+        <a href='https://guarded-hamlet-72730.herokuapp.com/' class="item" target="_blank">Capstone - ClickedIn</a>
       </div>
     </div>
     <div class="ui basic inverted icon top fixed menu">
@@ -45,7 +49,7 @@
         <div class="ui stackable grid padded centered">
           <!-- <div class="row stretched"> -->
             <!-- ************* LEFT COL ****************** -->
-            <div class="ui ten wide column ">  
+            <div class="ui ten wide column ">
               <!-- ABOUT ME BOX -->
                 <div class="ui piled segment _verticalFlexbox">
                     <div class="item">
@@ -54,9 +58,9 @@
                         </div>
                           <h1 class="header">About Me</h1>
                           <div class="description">
-                            <p class="_largeText"><b>I’m an aspiring full-stack developer</b> who loves everything about the web. I've lived in lots of different places 
-                              and have worked in lots of different jobs. I’m excited to bring my life experience to the process of building fantastic 
-                              looking web apps. I am life-long learner who's always interested in expanding my skills. 
+                            <p class="_largeText"><b>I’m an aspiring full-stack developer</b> who loves everything about the web. I've lived in lots of different places
+                              and have worked in lots of different jobs. I’m excited to bring my life experience to the process of building fantastic
+                              looking web apps. I am life-long learner who's always interested in expanding my skills.
                             </p>
                             <p class="_largeText">
                                 When I have free time I like to exercise, paint, ski, hike, or simply jamming out on my uke.
@@ -74,7 +78,7 @@
                                   <div class="ui list">
                                       <div class="item">HTML/CSS</div>
                                       <div class="item">JavaScript</div>
-                                      <div class="item">MEAN Stack</div>
+                                      <div class="item">React</div>
                                       <div class="item">Firebase</div>
                                       <div class="item">WordPress</div>
                                     </div>
@@ -84,8 +88,8 @@
                             <div class="column">
                                 <h5 class="header">Seeking Following Opportunities in:</h5>
                                 <div class="ui list">
-                                  <div class="item">JavaScript Developer Roles</div>
-                                  <div class="item">Freelance Work - Web Development</div>
+                                  <div class="item">Junior Developer Role</div>
+                                  <div class="item">Freelance Work</div>
                                   <div class="item">Volunteer opportunities in youth empowerment</div>
                                 </div>
                             </div>
@@ -97,10 +101,16 @@
 
             <!-- ************* RIGHT COL ****************** -->
             <div class="ui six wide column  ">
-              <div class="ui piled segment _verticalStretch">
+              <div class="ui piled center aligned segment _verticalStretch">
                 <h3 class="ui header">Projects</h3>
-                <div class="ui image">
-                  <img id="image-holder" src="">
+                <div class="ui">
+                  <!-- <a href="https://guarded-hamlet-72730.herokuapp.com/" target="_blank"><img id="image-holder" src="assets/images/capstone.png"></a> -->
+                  <div id="ui button group ">
+                    <button id="previous" class="ui button">Previous</button>
+                    <button id="next" class="ui button">Next</button>
+                  </div>
+                  <div class="ui divider"></div>
+                  <div id="image-holder" class="ui image"></div>
                 </div>
               </div>
               <div class="ui piled segment _verticalStretchLess ">
@@ -108,10 +118,10 @@
                 <h3 class="ui header fluid center aligned">Connect</h3>
                 </div>
                 <div class="ui fluid _centerButtons">
-                  <a class="ui massive circular linkedin icon button" href="https://www.linkedin.com/in/lorenzovasquez">
+                  <a class="ui massive circular linkedin icon button" href="https://www.linkedin.com/in/lorenzovasquez" target="_blank">
                       <i class="linkedin icon"></i>
                   </a>
-                  <a class="ui massive circular github icon button" href="https://github.com/vasquezlf">
+                  <a class="ui massive circular github icon button" href="https://github.com/vasquezlf" target="_blank">
                     <i class="github icon"></i>
                   </a>
                 </div>
@@ -125,17 +135,17 @@
                 </div>
               </div>
             <!-- </div> -->
-            
+
             </div>
           </div>
 
       </div>  <!-- END ui.grid -->
     </main>  <!-- END .ui.container -->
   </div>  <!-- END **** div.pusher **** -->
-        
-    </div>  
 
-    
+    </div>
+
+
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- SemanticUI JS -->
